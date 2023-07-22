@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #efefef;
+  color: #ffffff;
   background-color: #1a1a1a;
 }
 
@@ -18,7 +18,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 4rem;
@@ -34,6 +34,14 @@ nav .links {
   flex-direction: row;
   justify-content: end;
   gap: 2rem;
+}
+
+nav svg {
+  display: none;
+}
+
+.container:first-of-type {
+  margin-top: 8rem;
 }
 
 .container {
@@ -85,9 +93,49 @@ a:hover::after {
   width: 100%;
 }
 
-#about,
-#projects,
-#contact {
-  padding-top: 8rem;
-  margin-top: -8rem;
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.8rem;
+  }
+  
+  .container {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  nav {
+    backdrop-filter: blur(6px);
+  }
+  
+  nav svg {
+    display: block;
+  }
+
+  nav .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    top: 4rem;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    padding-top: 1rem;
+    font-size: 1rem;
+    backdrop-filter: blur(6px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #414141;
+    
+    right: -100%;
+    transition: right 200ms linear;
+  }
+  
+  nav .links.active {
+    right: 0;
+  }
+
+  a::after {
+    height: 0;
+  }
 }
