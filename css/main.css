@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Fira Mono', monospace;
+  font-family: 'Rubik', monospace;
 }
 
 body {
@@ -11,6 +11,10 @@ body {
   align-items: center;
   color: #ffffff;
   background-color: #1a1a1a;
+}
+
+p {
+  color: #dddddd;
 }
 
 nav {
@@ -72,7 +76,6 @@ a:hover,
 a:active {
   display: inline-block;
   text-decoration: none;
-  font-weight: 500;
   color: #49ee57;
 }
 
