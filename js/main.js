@@ -1,5 +1,5 @@
-const burgerMenu = document.querySelector("nav svg");
-const linksMenu = document.querySelector("nav .links");
+const burgerMenu = document.querySelector("#link-burger-icon");
+const linksMenu = document.querySelector("nav");
 const links = linksMenu.querySelectorAll("a");
 const ageSpan = document.querySelector("#age");
 

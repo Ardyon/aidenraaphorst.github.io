@@ -1,113 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <title>Home</title>
 </head>
-<body>
 
-  <nav>
+<body>
+  <header>
     <h1 class="title">Aiden Raaphorst</h1>
 
-    <svg width="2rem" height="2rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg id="link-burger-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M4 18L20 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
       <path d="M4 12L20 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
       <path d="M4 6L20 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
     </svg>
 
-    <div class="links">
-      <a href="#about">Over mij</a>
-      <a href="#projects">Projecten</a>
-      <a target="_blank" href="https://github.com/AidenRaaphorst">Github</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
+    <nav>
+      <ul class="links">
+        <li><a href="#about">Over mij</a></li>
+        <li><a href="#projects">Projecten</a></li>
+        <li><a target="_blank" href="https://github.com/AidenRaaphorst">Github</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="container">
-    <h2 id="about" class="container-title">Over mij</h2>
+  <main>
+    <article>
+      <h2 id="about">Over mij</h2>
 
-    <h3 class="container-header">School</h3>
-    <p>
-      Ik ben <span id="age">0</span> jaar en een 3e jaars MBO Software Developer op het 
-      <a target="_blank" href="https://www.roc-nijmegen.nl/locaties/heyendaalseweg">ROC Nijmegen</a>. <br>
-      Op school hebben we vooral veel geleerd over web development. HTML, CSS, JavaScript. We hebben ook gewerkt met React en Firebase. Zelf heb ik ook nog gewerkt met Tailwind. <br>
-      Ondanks veel front-end web development gedaan te hebben, vind ik back-end, console apps, of gewoon Minecraft mods een stuk leuker, want ik ben niet goed met design. <br>
-    </p>
-    
-    <h3 class="container-header">Vrije tijd</h3>
-    <p>
-      Thuis werk ik aan veel projecten en werk ik met Java, Python en JavaScript. <br>
-      Met Java maakte ik vooral Minecraft mods. <br>
-      Met Python maakte ik een app waarmee je allemaal Minecraft mods tegelijkertijd kan downloaden voor een specifieke versie,
-      genaamd <a target="_blank" href="https://github.com/AidenRaaphorst/mc-mod-updater">MC Mod Updater</a>. <br>
-      Daar ben ik nog steeds mee bezig, want ik werk met allemaal tools die ik nog niet ken. <br>
-      Verder heb ik ook een 'Wake on WAN' website gemaakt. Daarmee kan ik mijn pc aanzetten als ik niet thuis ben.
-    </p>
+      <section>
+        <h3>School</h3>
+        <p>
+          Ik ben <span id="age">0</span> jaar en een 4e jaars MBO Software Developer op het
+          <a target="_blank" href="https://www.roc-nijmegen.nl/locaties/heyendaalseweg">ROC Nijmegen</a>. <br>
+          Op school hebben we vooral veel geleerd over web development. HTML, CSS, JavaScript. We hebben ook gewerkt met
+          React en Firebase. Zelf heb ik ook nog gewerkt met Tailwind. <br>
+          Ondanks veel front-end web development gedaan te hebben, vind ik back-end, console apps, of gewoon Minecraft
+          mods
+          een stuk leuker, want ik ben niet goed met design. <br>
+        </p>
+      </section>
 
-    <h3 class="container-header">Stage</h3>
-    <p>
-      Op mijn 1e stage (<a target="_blank" href="https://www.getplate.com/nl">Plate</a>) werkte ik aan de back-end. <br>
-      Mij werd uitgelegd hoe hun hele back-end werkte. Ik heb kennis gemaakt met 
-      <a target="_blank" href="https://expressjs.com/">ExpressJS</a>, 
-      <a target="_blank" href="https://nestjs.com/">NestJS</a>, 
-      <a target="_blank" href="https://www.docker.com/">Docker</a>,
-      <a target="_blank" href="https://graphql.org/">GraphQL</a>,
-      graph databases met <a target="_blank" href="https://neo4j.com/">Neo4j</a>, 
-      en een heel klein beetje 
-      <a target="_blank" href="https://www.rabbitmq.com/">RabbitMQ</a>
-      en 
-      <a target="_blank" href="https://kubernetes.io/">Kubernetes</a>.
-    </p>
-  </div>
+      <section>
+        <h3>Vrije tijd</h3>
+        <p>
+          Thuis werk ik aan veel projecten en werk ik met Java, Python en JavaScript. <br>
+          Met Java maak ik vooral Minecraft mods. <br>
+          Met Python maak ik allemaal dingen, waaronderr een app waarmee je allemaal Minecraft mods 
+          tegelijkertijd kan downloaden voor een specifieke versie, genaamd
+          <a target="_blank" href="https://github.com/AidenRaaphorst/mc-mod-updater">MC Mod Updater</a>. <br>
+          Daar ben ik nog steeds mee bezig, want ik werk met allemaal tools die ik nog niet ken. <br>
+          Met JavaScript heb ik onder andere een 'Wake on WAN' website gemaakt. Daarmee kan ik mijn pc aanzetten als ik niet thuis ben.
+        </p>
+      </section>
 
-  <div class="container">
-    <h2 id="projects" class="container-title">Projecten</h2>
+      <section>
+        <h3>Stage</h3>
+        <h4><a target="_blank" href="https://www.getplate.com/nl">Plate</a></h4>
+        <p>
+          Op mijn 1e stage werkte ik aan de back-end.
+          <br>
+          Mij werd uitgelegd hoe hun hele back-end werkte. Ik heb kennis gemaakt met
+          <a target="_blank" href="https://expressjs.com/">ExpressJS</a>,
+          <a target="_blank" href="https://nestjs.com/">NestJS</a>,
+          <a target="_blank" href="https://www.docker.com/">Docker</a>,
+          <a target="_blank" href="https://graphql.org/">GraphQL</a>,
+          graph databases met <a target="_blank" href="https://neo4j.com/">Neo4j</a>,
+          en een heel klein beetje
+          <a target="_blank" href="https://www.rabbitmq.com/">RabbitMQ</a>
+          en
+          <a target="_blank" href="https://kubernetes.io/">Kubernetes</a>.
+        </p>
 
-    <p>Dit zijn een paar persoonlijke projectjes.</p>
+        <h4><a href="https://gimtransfer.com/" target="_blank">GIMtransfer</a></h4>
+        <p>
+          Op mijn 2e stage werkte ik vooral aan de front-end, maar ook een beetje back-end. Ik zat daar met 2 klasgenoten. <br>
+          We hebben documentatie (code comments, UML diagrammen, plannen) moeten maken voor het bedrijf, want dat hadden ze zelf niet.
+          Verder hebben vooral gewerkt met ReactJS, maar hebben ook kennis gemaakt met
+          <a href="https://redux.js.org/" target="_blank" rel="noopener noreferrer">Redux</a>,
+          <a href="https://threejs.org/" target="_blank" rel="noopener noreferrer">three.js</a> en 
+          <a href="https://docs.pmnd.rs/react-three-fiber" target="_blank" rel="noopener noreferrer">React Three Fiber</a>. <br>
+          Zelf heb ik ook nog een beetje gewerkt met de back-end, namelijk 
+          <a href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank" rel="noopener noreferrer">ASP.NET Core</a>. <br>
+        </p>
+      </section>
 
-    <h3 class="container-header"><a target="_blank" href="https://github.com/AidenRaaphorst/mc-mod-updater">MC Mod Updater</a></h3>
-    <p>
-      Ik speel vaak met veel client-side mods, dus als een nieuwe versie van Minecraft uitkwam, moest ik die allemaal updaten. <br>
-      Ik vond het te veel moeite om elke mod op te zoeken, downloaden en dan in het goeie mapje te zetten, dus ik ging een app maken waar je links van mods in een bestand zet, en die dan tegelijkertijd kan downloaden. <br>
-      Met mooie was ook dat alle links werden opgeslagen, dus je hoefde ze niet de hele tijd op te zoeken. <br>
-      Na dat alle links in een bestand staan, heb je de keuze om de modloader en versie te kiezen, daarna zoekt de app alle mods op met de CurseForge en Modrinth API. <br>
-      <br>
-      Het werkte, maar was alsnog langzaam, omdat je zelf naar de website moest gaan, mod opzoeken en URL kopiëren. <br>
-      Daarom ben ik gestart met een zoek functie in de app. Dan kan je de mod gewoon in de app opzoeken.
-    </p>
+    </article>
 
-    <h3 class="container-header">Server Shutdown Timer</h3>
-    <p>
-      Toen ik met een paar vrienden een Minecraft server had, hostte ik mijn eigen server thuis. 
-      De computer mocht niet 24/7 aanstaan van mijn moeder, dus ik had een server-side mod gemaakt die de server automatisch uit zet. <br>
-      De timer startte op het moment dat er geen spelers meer online waren en stopte wanneer er iemand online kwam voordat de timer af ging.
-    </p>
+    <article>
+      <h2 id="projects">Projecten</h2>
+      <p>Dit zijn een paar persoonlijke projectjes.</p>
 
-    <h3 class="container-header">Userscripts</h3>
-    <p>
-      Ik heb een paar <a target="_blank" href="https://en.wikipedia.org/wiki/Userscript">Userscripts</a> gemaakt
-      zoals <a target="_blank" href="https://github.com/AidenRaaphorst/youtube-declutter">Youtube Declutter</a>
-      en <a target="_blank" href="https://github.com/AidenRaaphorst/eduarte-betere-cijferlijst">Eduarte Betere Cijferlijst</a>.
-    </p>
-  </div>
+      <section>
+        <h3><a target="_blank" href="https://github.com/AidenRaaphorst/mc-mod-updater">MC Mod Updater</a></h3>
+        <p>
+          Ik speel vaak met veel client-side mods, dus als een nieuwe versie van Minecraft uit komt, moet ik die allemaal updaten. <br>
+          Ik vond het te veel moeite om elke mod op te zoeken, de juiste versie te vinden, te downloaden en dan in het goeie mapje te zetten, 
+          dus ik wou een app maken waar je links van mods in een bestand kan zetten, en die dan in één keer kan downloaden. <br>
+          Het mooie was ook dat alle links werden opgeslagen, dus je hoefde ze niet de hele tijd op te zoeken. <br>
+          Na dat alle links in een bestand staan, heb je de keuze om de mod loader en versie te kiezen, daarna zoekt de app
+          alle mods op met de CurseForge en Modrinth API. <br>
+        </p>
+      </section>
 
-  <div class="container">
-    <h2 id="contact" class="container-title">Contact</h2>
-    
-    <p>
-      Het liefst met email contact opnemen, dan staat alle informatie als tekst <br>
-      en kan ik het altijd weer opzoeken.
-    </p>
-    <br>
+      <section>
+        <h3>Server Shutdown Timer</h3>
+        <p>
+          Toen ik met een paar vrienden een Minecraft server had, hostte ik mijn eigen server thuis.
+          De computer mocht niet 24/7 aanstaan van mijn moeder, dus ik had een server-side mod gemaakt die de server
+          automatisch uit zet. <br>
+          De timer startte op het moment dat er geen spelers meer online waren en stopte wanneer er iemand online kwam
+          voordat de timer af ging.
+        </p>
+      </section>
 
-    <p>Email: <a href="mailto:aidenraaphorst@gmail.com">aidenraaphorst@gmail.com</a></p>
-  </div>
+      <section>
+        <h3>MC WebPanel</h3>
+        <p>
+          Ik host nu mijn Minecraft server in de cloud, maar ik kan niet makkelijk bij de console. <br>
+          Dus ik heb een mod gemaakt die een website host met een console, zodat je direct met de server kan praten via de website.
+          Natuurlijk is de website goed beveiligd.
+        </p>
+      </section>
+
+      <section>
+        <h3>Userscripts</h3>
+        <p>
+          Ik heb een paar <a target="_blank" href="https://en.wikipedia.org/wiki/Userscript">Userscripts</a> gemaakt
+          zoals <a target="_blank" href="https://github.com/AidenRaaphorst/youtube-declutter">Youtube Declutter</a>
+          en <a target="_blank" href="https://github.com/AidenRaaphorst/eduarte-betere-cijferlijst">Eduarte Betere
+            Cijferlijst</a>.
+        </p>
+      </section>
+    </article>
+
+    <article>
+      <h2 id="contact">Contact</h2>
+
+      <section>
+        <p>
+          Het liefst via email contact opnemen, dan staat alle informatie als tekst opgeslagen en kan ik het altijd weer
+          opzoeken.
+        </p>
+        <br>
   
+        <p>Email: <a target="_blank" href="mailto:aidenraaphorst@gmail.com">aidenraaphorst@gmail.com</a></p>
+      </section>
+    </article>
+  </main>
+
   <script src="js/main.js"></script>
 </body>
+
 </html>
